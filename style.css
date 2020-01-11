@@ -1,0 +1,59 @@
+
+*
+{
+    box-sizing: border-box;
+}
+
+.container{
+    padding:5%;
+}
+.wrapper{
+    border : 1px solid blue;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+}
+
+input[type=email],input[type=password]
+{
+    border: none;
+    border-bottom: 1px solid black;
+    flex: 2;
+    height: 25px;
+    outline: none;
+    
+}
+label{
+    flex: 1;
+}
+.form-group
+{
+    display: flex;
+    justify-content: flex-end;
+    margin:5% 0;
+}
+
+input[type=email]:focus,input[type=password]:focus
+{
+    border-bottom: 1px blue solid;
+}
+
+.btn
+{
+    padding:1% 2%;
+    background-color: beige;
+    border: cadetblue 1px solid;
+    font-size: medium;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+}
+
+.link
+{
+    font-size: 13px;
+    color: cornflowerblue;
+}
