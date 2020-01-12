@@ -1,16 +1,19 @@
-//a tester avec le getelementbyclassename pour eviter la redondance
 
-var registerLink = document.getElementById("registerLink");
-var singinLink=document.getElementById("singinLink");
 var formSign=document.getElementById("formSign");
 var formRegister=document.getElementById("formRegister");
-formRegister.style.display='none';
-registerLink.addEventListener("click", function(){
-    formSign.style.display='none';
-    formRegister.style.display='block';
-});
+var links=document.getElementsByClassName("link");
 
-singinLink.addEventListener("click", function(){
-    formRegister.style.display='none';
-    formSign.style.display='block';
+Array.from(links).forEach(element => {
+    element.addEventListener("click",function(e){
+        if(e.target.id=="registerLink")
+        {   
+            formSign.style.display='none';
+            formRegister.style.display='block';
+        }
+        else
+        {  
+            formRegister.style.display='none';
+            formSign.style.display='block';
+        } 
+    });
 });

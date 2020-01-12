@@ -2,13 +2,14 @@
 *
 {
     box-sizing: border-box;
+    background-color: whitesmoke;
 }
 
 .container{
     padding:5%;
 }
 .wrapper{
-    border : 1px solid blue;
+    border : 1px solid #6ACA9A;
     border-radius: 5px;
     width: 50%;
     margin: auto;
@@ -26,6 +27,7 @@ input[type=email],input[type=password]
 }
 label{
     flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .form-group
 {
@@ -36,24 +38,32 @@ label{
 
 input[type=email]:focus,input[type=password]:focus
 {
-    border-bottom: 1px blue solid;
+    border-bottom: 1px #33BFCC solid;
 }
 
 .btn
 {
-    padding:1% 2%;
-    background-color: beige;
-    border: cadetblue 1px solid;
-    font-size: medium;
+    padding:2%;
+    background-color: #43BC7F;
+    border: none;
+    font-family: sans-serif;
+    color:white;
+    font-weight: bold;
+    width:17%
 }
 
 .btn:hover
 {
     cursor: pointer;
+    background-color: #69C998;
+    letter-spacing: 2px;
 }
 
 .link
 {
     font-size: 13px;
-    color: cornflowerblue;
+    color: #3372CC;
+}
+#formRegister{
+    display: none;
 }
